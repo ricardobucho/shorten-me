@@ -1,0 +1,18 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+
+// Our custom settings
+$default-font-family: 'Open Sans', 'Tahoma', 'Arial', sans-serif;
+$header-font-family: 'Pacifico', 'Times', 'Times New Roman', serif;
+
+$default-font-size: 1rem;
+
+
+// Bootstrap overrides
+$font-family-sans-serif: $default-font-family;
+$font-size-base: $default-font-size;
+
+$blue: #1b3987;
+$dark: #0b1736;

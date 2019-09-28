@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shorten.me ~ Your link shortner</title>
+    <%= csrf_meta_tags %>
+
+    <%= favicon_link_tag asset_pack_path('media/static/favicon.png') %>
+
+	<%= stylesheet_pack_tag 'app' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

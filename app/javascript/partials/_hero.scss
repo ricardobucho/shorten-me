@@ -1,0 +1,21 @@
+// Hero section
+.hero {
+	padding: 65px 0;
+
+	&__intro {
+		color: #252525;
+
+		h1 {
+			font-size: $h1-font-size * 1.6;
+			font-weight: bold;
+			line-height: .9;
+		}
+
+		p {
+			font-size: 1.3em;
+			color: #aaa;
+			line-height: 1;
+			margin-top: 1em;
+		}
+	}
+}

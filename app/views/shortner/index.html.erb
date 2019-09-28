@@ -1,0 +1,36 @@
+<nav class="navbar">
+	<%= link_to 'Shorten.me', root_path %>
+</nav>
+
+<section class="hero">
+	<div class="container">
+		<div class="row">
+			<div class="hero__intro col-md-5">
+				<h1>Create Click-Worthy Links</h1>
+				<p>Build and protect your brand using powerful, recognizable short links.</p>
+			</div>
+			<div class="hero__image col-md-7">
+				<%= image_pack_tag 'media/static/hero.png' %>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="shortner">
+	<div class="container">
+		<div id="shortner"></div>
+		<p class="shortner__terms">
+			By clicking SHORTEN, you are agreeing to Shorten.me's Terms of Service and Privacy Policy
+		</p>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		&copy; 2019 Shorten.me<br>
+		All rights reserved
+	</div>
+</footer>
+
+
+<%= javascript_pack_tag 'index' %>

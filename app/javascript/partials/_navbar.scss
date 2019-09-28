@@ -1,0 +1,20 @@
+// Simple navbar
+.navbar {
+	display: block;
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+
+	a {
+		font-family: $header-font-family;
+		font-size: $h2-font-size;
+		font-weight: 300;
+		color: color('orange');
+		transition: color .2s linear;
+		text-decoration: none;
+
+		&:hover {
+			color: color('yellow');
+		}
+	}
+}
