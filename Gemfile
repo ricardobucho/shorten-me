@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker'
+gem 'webpacker', '~> 3.5'
 
 # Responders
 gem 'responders'
