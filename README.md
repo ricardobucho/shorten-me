@@ -1,5 +1,5 @@
 # Shorten Me
-A simple link shortner application built using Ruby on Rails, React.js and SQLite3.
+A simple link shortner application built using Ruby on Rails, React.js and SQLite3 (PostgreSQL for production).
 JavaScript and SCSS are compiled using Webpack.
 
 ## Requirements
