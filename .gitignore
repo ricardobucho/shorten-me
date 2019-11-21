@@ -16,15 +16,27 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+.env
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
 
 /node_modules
 /yarn-error.log
-
+/gems
+/public/assets
 .byebug_history
 
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+/config/database.yml
+.vscode
+/vendor/bundler
+/public/uploads
+
+# macOS:
+.DS_Store
+
+# vscode:
+.vscode
