@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import 'bootstrap/dist/js/bootstrap'
-import './app.scss'
+require.context('../images', true)
+require('../stylesheets/app.scss')
+//import './bootstrap.js'
 
 import Shortner from '../components/Shortner'
 
