@@ -5,7 +5,6 @@ import axios from 'axios';
 import Alert from './Alert'
 
 class Shortner extends Component {
-
 	state = {
 		alert: {
 			title: '',
@@ -53,12 +52,12 @@ class Shortner extends Component {
 	}
 
 	validateInputs = () => {
-
-		let link = this.state.shorten.link,
-			token = this.state.shorten.token
+		const param = document.querySelector('[name=csrf-param]').content
+		const token = document.querySelector('[name=csrf-token]').content
 
 		axios
 			.post('/api/v1/links', {
+				[param]: token,
 				url: this.state.shorten.link,
 				token: this.state.shorten.token,
 			})
@@ -69,7 +68,7 @@ class Shortner extends Component {
 					this.deepState('shorten', 'link', '');
 					this.deepState('shorten', 'token', '');
 				} else {
-					this.displayAlert({ title: 'Oops...', content: <div>Something went wrong, check the error below to see what went wrong.<br /><br /><div class="text-danger">{ r.data.messages }</div></div>, closeText: false })
+					this.displayAlert({ title: 'Oops...', content: <div>Something went wrong, check the error below to see what went wrong.<br /><br /><div className="text-danger">{ r.data.messages }</div></div>, closeText: false })
 				}
 			})
 	}
