@@ -57,6 +57,10 @@ class Shortner extends Component {
 	validateInputs = () => {
 		axios
 			.post('/api/v1/links', {
+				headers: {
+					accept: 'application/json',
+					contentType: 'application/json',
+				},
 				url: this.state.shorten.link,
 				token: this.state.shorten.token,
 			})
