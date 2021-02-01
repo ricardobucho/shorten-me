@@ -2,15 +2,15 @@
   "entrypoints": {
     "index": {
       "js": [
-        "/packs/js/index-7907057a688f08991736.js"
+        "/packs/js/index-a07fcae423304890829f.js"
       ],
       "js.map": [
-        "/packs/js/index-7907057a688f08991736.js.map"
+        "/packs/js/index-a07fcae423304890829f.js.map"
       ]
     }
   },
-  "index.js": "/packs/js/index-7907057a688f08991736.js",
-  "index.js.map": "/packs/js/index-7907057a688f08991736.js.map",
-  "media/images/favicon.png": "/packs/media/images/favicon-a7f20ff1.png",
-  "media/images/hero.png": "/packs/media/images/hero-23052242.png"
+  "index.js": "/packs/js/index-a07fcae423304890829f.js",
+  "index.js.map": "/packs/js/index-a07fcae423304890829f.js.map",
+  "media/images/favicon.png": "/packs/media/images/favicon-a7f20ff13a7ba343db31f0f3acf4f3d3.png",
+  "media/images/hero.png": "/packs/media/images/hero-23052242124cf42354510f38be13affe.png"
 }
