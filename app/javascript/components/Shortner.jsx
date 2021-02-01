@@ -21,6 +21,9 @@ class Shortner extends Component {
 
 	constructor (props) {
 		super(props)
+
+		const token = document.querySelector('[name=csrf-token]').content
+		axios.defaults.headers.common['X-CSRF-Token'] = token
 	}
 
 	deepState = (outer, inner, value) => {
@@ -52,12 +55,8 @@ class Shortner extends Component {
 	}
 
 	validateInputs = () => {
-		const param = document.querySelector('[name=csrf-param]').content
-		const token = document.querySelector('[name=csrf-token]').content
-
 		axios
 			.post('/api/v1/links', {
-				[param]: token,
 				url: this.state.shorten.link,
 				token: this.state.shorten.token,
 			})
